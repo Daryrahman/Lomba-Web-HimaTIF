@@ -1,8 +1,8 @@
-<!-- <script>
+<script>
     const url = window.location.search;
     const getUrl = new URLSearchParams(url);
     const urlVal = getUrl.get('views');
-</script> -->
+</script>
 
 <div id="header">
     <div class="logo">
@@ -14,10 +14,36 @@
     </div>
     <div class="navbar" style="float: right;">
         <ul>
-            <li ><a href="index.html">Home</a></li>
-            <li><a href="index.html?views=profile">Profile</a></li>
-            <li><a href="index.html?views=gallery">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <script>
+                switch(urlVal) {
+                    case "profile":
+                        $(function() {
+                            $('#Profile').addClass('active');
+                        });
+                        break;
+                    case "gallery":
+                        $(function() {
+                            $('#Gallery').addClass('active');
+                        });
+                        break;
+                    default:
+                        $(function() {
+                            $('#Home').addClass('active');
+                        });
+                }
+
+                $(document).ready(function() {
+                    $('#Contact').click(function() {
+                        $('html, body').animate({
+                            scrollTop: $('html, body').get(0).scrollHeight
+                        }, 1300);
+                    });
+                })
+            </script>
+            <li><a id="Home" href="index.html">Home</a></li>
+            <li><a id="Profile" href="index.html?views=profile">Profile</a></li>
+            <li><a id="Gallery" href="index.html?views=gallery">Gallery</a></li>
+            <li><a id="Contact" href="#">Contact</a></li>
         </ul>
     </div>
 </div>

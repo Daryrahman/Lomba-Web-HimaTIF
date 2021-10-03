@@ -38,7 +38,7 @@ font-family: 'Ruda', sans-serif;
     background: transparent;
     border: 2px solid #EEEEEE;
     border-radius: 15px;
-    color: #EEEEEE;
+    color: #3EB3D9;
     font-size: 18px;
     font-weight: bold;
     padding: 20px 40px;
@@ -47,9 +47,46 @@ font-family: 'Ruda', sans-serif;
     left: 600px;
 }
 
+.banner-btn:hover {
+    background: #3EB3D9;
+    border: 2px solid #3EB3D9;
+    color: #EEEEEE;
+    transition: 0.3s;
+    transition-delay: 0.05s;
+}
+
 #content {
-    border: 1px solid #0000;
     padding: 152px 90px;
+}
+
+.ctn-btn {
+    background: transparent;
+    border: 2px solid #064D79;
+    border-radius: 15px;
+    color: #064D79;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 60px;
+    position: relative;
+    top: 20px;
+}
+
+.ctn-btn:hover {
+    background: #064D79;
+    color: #EEEEEE;
+    transition: 0.3s;
+    transition-delay: 0.05s;
+}
+
+#footer {
+    background: #064D79;
+    color: #EEEEEE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
 }
 
 #header {
@@ -57,7 +94,9 @@ font-family: 'Ruda', sans-serif;
     position: fixed;
     height: 80px;
     padding: 10px 60px;
+    top: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .logo-img {
@@ -89,7 +128,6 @@ font-family: 'Ruda', sans-serif;
     display: inline-block;
     position: relative;
     display: inline-block;
-    /* right: 70px; */
     bottom: 50px;
 }
 
@@ -116,7 +154,69 @@ font-family: 'Ruda', sans-serif;
     padding: 10px 18px;
 }
 
-.navbar li a:hover {
+.navbar li a:hover:not(.active) {
     border-bottom: 2px solid #064D79;
     transition-delay: 0.1s;
+}
+
+.prv-gallery {
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 60px;
+}
+
+.prv-gallery-img {
+    background: #C4C4C4;
+    border-radius: 15px;
+    display: inline-block;
+    height: 215px;
+    margin: 3px;
+    width: 380px;
+}
+
+.vismis,
+.visi,
+.misi {
+    color: #EEEEEE;
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 35px;
+    width: 520px;
+}
+
+.visi,
+.misi {
+    display: inline-block;
+    border: 1px solid #064D79;
+    height: 300px;
+}
+
+.visi:hover,
+.misi:hover {
+    border-block: 1px solid #EEEEEE;
+    transition: 0.3s;
+    transition-delay: 0.05s;
+}
+
+.vismis-title {
+    border-bottom: 2px solid #EEEEEE;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
+    width: 80px;
+}
+
+.vismis-vl {
+    font-size: 18px;
+    font-weight: 80;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.vm-bag {
+    background: #064D79;
+    padding: 80px;
 }
