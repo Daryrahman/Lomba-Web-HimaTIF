@@ -190,6 +190,7 @@ font-family: 'Ruda', sans-serif;
 .prv-gallery-img1,
 .prv-gallery-img2,
 .prv-gallery-img3 {
+    border: 1px solid #FFFFFF;
     border-radius: 15px;
     display: inline-block;
     height: 215px;
