@@ -443,7 +443,8 @@ input[name="b"] {
     padding: 50px;
 }
 
-.box-kw {
+.box-k,
+.box-w {
     border: 1px solid gray;
     border-radius: 25px;
     width: 23%;
@@ -453,6 +454,20 @@ input[name="b"] {
     background-color: #d3d3d3;
     border-color: #d3d3d3;
     display: inline-block;
+}
+
+.box-k {
+    background: url('../img/ketua.jpg');
+    background-repeat: no-repeat;
+    background-position-x: -168px;
+}
+
+.box-w {
+    float: right;
+    position: relative;
+    top: 200px;
+    background: url('../img/wakil.jpg');
+    background-repeat: no-repeat;
 }
 
 .ketua-title {
