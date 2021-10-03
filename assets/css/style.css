@@ -460,6 +460,7 @@ input[name="b"] {
     background: url('../img/ketua.jpg');
     background-repeat: no-repeat;
     background-position-x: -168px;
+    background-size: 160%;
 }
 
 .box-w {
@@ -468,6 +469,7 @@ input[name="b"] {
     top: 200px;
     background: url('../img/wakil.jpg');
     background-repeat: no-repeat;
+    background-size: 130%;
 }
 
 .ketua-title {
